@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.glitter-bg {
+  background: radial-gradient(#ffe6f0, #ffc0cb);
+  animation: sparkle 5s linear infinite;
+}
+
+.heart-bg {
+  background: radial-gradient(#ffcccc, #ff99cc);
+}
+
+.centered {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 20px #ff69b4;
+  animation: jitter 1s infinite alternate;
+}
+
+.photo {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px pink;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes sparkle {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes jitter {
+  0% { transform: rotate(-1deg) scale(1.02); }
+  100% { transform: rotate(1deg) scale(1.05); }
+}
+
+.glow {
+  color: #fff;
+  text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff69b4;
+}
+
+.sparkle {
+  animation: jitter 2s infinite alternate;
+}
